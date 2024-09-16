@@ -11,7 +11,16 @@ using namespace std;
 
 int main()
 {
-    
+    const int num=3;
+    string names[num];
+    cout << "Please enter 3 names: " << endl;
+    for (int i=0; i<num; i++)
+    {
+        cout << "Name " << (i+1) << ":" << endl;
+        getline(cin, names[i]);
+    }
+    cout << "The first name in the array is: " << names[0] << endl;
+    return 0;
 }
 
 
